@@ -1,0 +1,53 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainContainer h3 {
+  font-size: clamp(14px, 2vw, 18px);
+  color: #000000;
+  font-family: "Volkhov", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.types {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.typeOption {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #8A8A8A;
+  font-size: clamp(14px, 1.5vw, 16px);
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.typeOption:hover {
+  color: #484848;
+}
+
+.active {
+  color: #484848;
+}
+
+.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #484848;
+  border-radius: 1px;
+}

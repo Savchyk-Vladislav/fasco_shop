@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.mainContainer {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 70px clamp(20px, 10vw, 300px);
+  gap: 20px;
+}
+
+.sideImgContainer {
+  width: clamp(240px, 40vw, 392px);
+  height: clamp(360px, 59vw, 720px);
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.sideImgContainer img {
+  width: auto;
+  height: auto;
+  object-fit: cover;
+}
+
+.mediumContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.topImgContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  inline-size: auto;
+  block-size: auto;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.topImgContainer img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.bottomHeaderImg {
+  width: 100%;
+}
+
+.ultimate {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #484848;
+  font-size: clamp(48px, 6vw, 91px);
+  letter-spacing: -1px;
+  line-height: 1;
+  margin: 0;
+}
+
+.sale {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #ffffff;
+  text-shadow: -1px -1px 0 #484848, 1px -1px 0 #484848, -1px 1px 0 #484848,
+    1px 1px 0 #484848;
+  font-size: clamp(80px, 15vw, 187px);
+  letter-spacing: -2px;
+  line-height: 1;
+  margin: 0;
+}
+
+.collection {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #484848;
+  font-size: clamp(14px, 3vw, 20px);
+  letter-spacing: 2px;
+  line-height: 1;
+  margin: 0;
+}
+
+.shopNow {
+  cursor: pointer;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: clamp(12px, 3vw, 16px);
+  background-color: #000000;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 70px;
+  box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: inline-block;
+  margin-block-start: 25px;
+}
+
+.shopNow:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 25px 40px rgba(0, 0, 0, 0.2);
+}
+
+.textHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.logoSlider {
+  overflow: hidden;
+  width: 100%;
+  padding-block-end: 70px;
+  background: white;
+}
+
+.logoTrack {
+  display: flex;
+  width: max-content;
+  animation: scrollLoop 20s linear infinite;
+  gap: clamp(20px, 5vw, 60px);
+}
+
+.logoTrack img {
+  height: clamp(15px, 4vw, 30px);
+  width: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+@keyframes scrollLoop {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-34%);
+  }
+}
+
+@media (max-width: 768px) {
+  .mainContainer {
+    flex-direction: column;
+    margin: 40px 20px;
+  }
+
+  .sideImgContainer {
+    display: none;
+  }
+
+  .mediumContainer {
+    width: 100%;
+    gap: 15px;
+  }
+
+  .topImgContainer {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .topImgContainer img,
+  .sideImgContainer img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .shopNow {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .textHeader {
+    padding: 0 10px;
+  }
+}

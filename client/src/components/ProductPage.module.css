@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.mainContainer {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 100px;
+  margin-block: 50px;
+  padding-inline: clamp(20px, 5vw, 100px);
+}
+
+.mainContainer img {
+  width: 491px;
+  height: auto;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.details h6 {
+  font-size: clamp(10px, 1.5vw, 14px);
+  font-family: "Volkhov", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #666666;
+  line-height: 1px;
+  margin-top: 15px;
+}
+
+.details h1 {
+  font-size: clamp(20px, 3vw, 30px);
+  font-family: "Volkhov", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #000000;
+  line-height: 1px;
+  margin-top: 15px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: "Poppins", sans-serif;
+}
+
+.star {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+}
+
+.value {
+  font-size: clamp(14px, 2vw, 16px);
+  font-family: "Volkhov", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #000000;
+  margin-left: 8px;
+}
+
+.priceBlock {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.currentPrice {
+  font-size: clamp(18px, 2vw, 24px);
+  font-family: "Volkhov", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #000000;
+}
+
+.oldPrice {
+  font-size: clamp(14px, 1.5vw, 16px);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #8a8a8a;
+  text-decoration: line-through;
+}
+
+.discount {
+  background-color: #da3f3f;
+  color: #ffffff;
+  font-size: clamp(8px, 1vw, 11px);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  padding: 4px 10px;
+  border-radius: 11px;
+  white-space: nowrap;
+}
+
+.viewContainer {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+}
+
+.viewContainer span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #8a8a8a;
+  font-size: clamp(14px, 1.5vw, 16px);
+}
+
+.timerContainer {
+  width: 100%;
+  background-color: #fdefee;
+  border: 1px solid #f8cccc;
+  border-radius: 4px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.label {
+  font-size: clamp(14px, 1.5vw, 18px);
+  color: #ff706b;
+  font-family: "Volkhov", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.timer {
+  font-size: clamp(16px, 2vw, 20px);
+  font-family: "Volkhov", serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #ff706b;
+  letter-spacing: 2px;
+  font-variant-numeric: tabular-nums;
+}
+
+.sizeContainer {
+  font-family: "Poppins", sans-serif;
+}
+
+.sizeLabel {
+  font-size: clamp(14px, 1.5vw, 16px);
+  color: #000000;
+  font-family: "Volkhov", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 10px;
+}
+
+.sizeLabel span {
+  font-weight: 500;
+}
+
+.sizeButtons {
+  display: flex;
+  gap: 5px;
+}
+
+.sizeButton {
+  width: 45px;
+  height: 45px;
+  border-radius: 5px;
+  border: 1px solid #eeeeee;
+  background-color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #000000;
+  font-size: clamp(14px, 1.5vw, 18px);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.sizeButton:hover {
+  border-color: #ccc;
+}
+
+.active {
+  background-color: #000000;
+  color: #ffffff;
+  border-color: #000000;
+}
+
+.quantityContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.quantityContainer h4 {
+  font-size: clamp(14px, 1.5vw, 16px);
+  color: #000000;
+  font-family: "Volkhov", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.quantity button {
+  cursor: pointer;
+  width: 60%;
+  background-color: #ffffff;
+  border-radius: 6px;
+  font-size: clamp(14px, 1.5vw, 16px);
+  color: #000000;
+  font-family: "Volkhov", serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-block: 7px;
+  will-change: transform;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.quantity button:hover {
+  transform: scale(1.05);
+  background-color: #f7f7f7;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  width: fit-content;
+}
+
+.counter button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: #ffffff;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.counter button:hover {
+  background-color: #e0e0e0;
+}
+
+.counter input {
+  width: 40px;
+  height: 40px;
+  border: none;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  pointer-events: none;
+  background: white;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.infoItem {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 5px;
+}
+
+.infoItem p {
+  font-size: clamp(14px, 1.5vw, 16px);
+  color: #000000;
+  font-family: "Volkhov", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.paymentOptions {
+  width: 100%;
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.paymentOptions img {
+  max-width: 320px;
+}
+
+.paymentOptions h5 {
+  font-size: clamp(14px, 1.5vw, 16px);
+  color: #000000;
+  font-family: "Volkhov", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media (max-width: 768px) {
+  .mainContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding-inline: 20px;
+  }
+
+  .mainContainer img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+  }
+
+  .details {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .rating {
+    justify-content: center;
+  }
+
+  .priceBlock {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .viewContainer {
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  .timerContainer {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .sizeButtons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .quantity {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .info {
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .infoItem {
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .paymentOptions img {
+    max-width: 100%;
+  }
+
+  .paymentOptions h5 {
+    text-align: center;
+  }
+}

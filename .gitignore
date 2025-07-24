@@ -1,0 +1,13 @@
+# client
+client/node_modules/
+client/build/
+client/.env*
+
+# server
+server/node_modules/
+server/.env*
+
+# общие
+*.log
+.DS_Store
+.env
